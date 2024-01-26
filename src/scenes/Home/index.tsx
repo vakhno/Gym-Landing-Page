@@ -36,8 +36,9 @@ const Home = ({ setSelectedPage }: Props) => {
 							</div>
 						</div>
 						<p className="mt-8 text-sm">
-							Unrivaled Gym. Unparalleled Training Fitness Classes. World Class Studios to get the
-							Body Shapes That you Dream of.. Get Your Dream Body Now.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat tenetur
+							reiciendis, quae repellendus accusamus ut labore voluptatibus non dolore perspiciatis
+							numquam nulla eos nobis laudantium? Earum quis facilis cumque.
 						</p>
 					</motion.div>
 					{/* ACTIONS */}
@@ -68,7 +69,7 @@ const Home = ({ setSelectedPage }: Props) => {
 			{isAboveMediumScreen && (
 				<div className="h-[150px] w-full bg-primary-100 py-10">
 					<div className="mx-auto w-5/6">
-						<div className="flex w-3/5 items-center justify-between gap-8">
+						<div className="flex w-full items-center justify-between gap-8">
 							<img src={SponsorRedBull} alt="reb-bull" />
 							<img src={SponsorForbes} alt="forbes" />
 							<img src={SponsorFortune} alt="fortune" />

@@ -7,9 +7,17 @@ type Props = {
 	setSelectedPage?: (value: SelectedPage) => void;
 	onHandleClick?: () => void;
 	styles?: string;
+	type?: 'button' | 'reset' | 'submit' | undefined;
 };
 
-const index = ({ children, selectedPage, setSelectedPage, onHandleClick, styles }: Props) => {
+const index = ({
+	children,
+	selectedPage,
+	setSelectedPage,
+	onHandleClick,
+	styles,
+	type = 'button',
+}: Props) => {
 	return (
 		<>
 			{selectedPage ? (
@@ -19,7 +27,10 @@ const index = ({ children, selectedPage, setSelectedPage, onHandleClick, styles 
 					<button className={`${styles}`}>{children}</button>
 				</AnchorLink>
 			) : (
-				<button className={`${styles}`} onClick={() => onHandleClick && onHandleClick()}>
+				<button
+					type={type}
+					className={`${styles}`}
+					onClick={() => onHandleClick && onHandleClick()}>
 					{children}
 				</button>
 			)}
